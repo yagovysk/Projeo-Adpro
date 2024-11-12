@@ -1,0 +1,15 @@
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.logo {
+  width: 7rem;
+  border-radius: 10px;
+}
+.menu-list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
