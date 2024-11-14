@@ -3,13 +3,16 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
+  border-bottom: solid 1px orange;
+  background: black;
 }
 .logo {
-  width: 7rem;
+  width: 5rem;
   border-radius: 10px;
 }
 .menu-list {
   display: flex;
   list-style: none;
   gap: 1rem;
+  color: #fff;
 }

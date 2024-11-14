@@ -1,0 +1,41 @@
+.start-section {
+  background: url("../../assets/background-start.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 115vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4rem;
+  gap: 2rem;
+}
+.article-start {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15rem;
+  gap: 1rem;
+  text-align: center;
+  align-items: center;
+}
+.article-start h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+.article-start p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.prospection-button {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  border: solid 1px orange;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.prospection-button:hover {
+  box-shadow: 0 0 10px #ffa200, 0 0 20px #ffa200, 0 0 30px #ffa200,
+    0 0 40px #ffa200, 0 0 60px #ffa200, 0 0 80px #ffa200;
+  transform: scale(1.05);
+}
