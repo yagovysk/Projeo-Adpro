@@ -1,17 +1,67 @@
-import logo from "../../assets/logo.png";
+import { useState } from "react";
 import "./Menu.css";
+import { Link } from "react-scroll";
+import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../../assets/logo.png";
 
 export function Menu() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="nav-menu">
-      <img className="logo" src={logo} alt="" />
-      <ul className="menu-list">
-        <li>Sobre nós</li>
-        <li>Serviços</li>
-        <li>depoimentos</li>
+      <img src={logo} alt="Logo" className="logo" />
+      <div className="menu-icon" onClick={toggleMenu}>
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </div>
+      <ul className={`Menu-ul ${menuOpen ? "open" : ""}`}>
+        <li>
+          <Link
+            smooth={true}
+            duration={500}
+            className="button-menu"
+            to="servicos"
+            onClick={closeMenu}
+          >
+            Serviços
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            smooth={true}
+            duration={500}
+            className="button-menu"
+            to="about"
+            onClick={closeMenu}
+          >
+            Sobre Nós
+          </Link>
+        </li>
+        <li>
+          <Link className="button-menu" to="depoiments" onClick={closeMenu}>
+            Depoimentos
+          </Link>
+        </li>
       </ul>
-      <a className="contact-button" href="" target="_blank">
-        Entre em contato!
+      {menuOpen && (
+        <div className="menu-close-icon" onClick={closeMenu}>
+          <FaTimes />
+        </div>
+      )}
+      <a
+        href="https://wa.me/556199845648?text=Olá, vim pelo site, gostaria de mais informações."
+        className="button"
+        target="blank"
+      >
+        Entre em contato
       </a>
     </nav>
   );

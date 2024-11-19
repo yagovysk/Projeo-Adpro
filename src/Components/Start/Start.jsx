@@ -1,4 +1,5 @@
 import backgroundVideo from "../../assets/background-start.mp4";
+import perfil from "../../assets/perfil-1.png";
 import { useEffect, useRef } from "react";
 import "./Start.css";
 
@@ -24,18 +25,21 @@ export function Start() {
       ></video>
 
       <div className="content-overlay">
-        <article className="article-start">
-          <h1>Título inicial</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Exercitationem est excepturi quos maiores provident quam, nulla
-            animi libero et aspernatur, deleniti iusto id vero commodi, cum
-            dolorum nam quisquam. Beatae.
-          </p>
-        </article>
-        <a href="#" className="prospection-button">
-          Botão para contato
-        </a>
+        <div className="container-start">
+          <img className="perfil" src={perfil} alt="" />
+          <article className="article-start">
+            <h1>Título inicial</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Exercitationem est excepturi quos maiores provident quam, nulla
+              animi libero et aspernatur, deleniti iusto id vero commodi, cum
+              dolorum nam quisquam. Beatae.
+            </p>
+            <a href="#" className="prospection-button">
+              Botão para contato
+            </a>
+          </article>
+        </div>
       </div>
     </section>
   );
