@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem 0;
+  border-bottom: 2px solid #ff1f50c8;
 }
 
 .start-section::after {
