@@ -12,10 +12,10 @@ export function About() {
         muted
       />
       <div className="about-content">
-        <h1>Por que nos contratar?</h1>
-        <article>
-          <h2>Subtitulo</h2>
-          <ul>
+        <h2>Por que nos contratar?</h2>
+        <article className="article-about">
+          <h3>Subtitulo</h3>
+          <ul className="about-list">
             <li>motivo 1</li>
             <li>motivo 2</li>
             <li>motivo 3</li>

@@ -10,7 +10,9 @@
   background: #121212;
 }
 .nav-menu .logo {
-  width: 5rem;
+  width: 3rem;
+  border-radius: 10%;
+  border: 1px solid #ff1f4e;
 }
 .menu-icon {
   display: none;
